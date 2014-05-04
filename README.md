@@ -1,6 +1,6 @@
 # ActiveI18n
 
-TODO: Write a gem description
+Active Admin panel wich allows to modify I18n translations. Gem is currently in active indevelopment - I plan to lunch it on 18.05.2014
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+NONE - in development
 
 ## Contributing
 
