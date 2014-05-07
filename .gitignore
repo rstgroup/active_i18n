@@ -7,6 +7,10 @@ Gemfile.lock
 InstalledFiles
 _yardoc
 coverage
+<<<<<<< HEAD
+=======
+doc/
+>>>>>>> 86a2de3666dd42f2d7fb9951246167fbb591e95e
 lib/bundler/man
 pkg
 rdoc
@@ -14,3 +18,11 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+<<<<<<< HEAD
+=======
+*.bundle
+*.so
+*.o
+*.a
+mkmf.log
+>>>>>>> 86a2de3666dd42f2d7fb9951246167fbb591e95e
