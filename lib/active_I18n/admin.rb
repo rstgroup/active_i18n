@@ -1,0 +1,1 @@
+require "active_I18n/admin/active_admin"

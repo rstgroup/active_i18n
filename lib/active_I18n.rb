@@ -1,5 +1,9 @@
 require "active_I18n/version"
+require "active_I18n/admin"
 
 module ActiveI18n
-  # Your code goes here...
+  module Rails
+    class Engine < ::Rails::Engine
+    end
+  end
 end
