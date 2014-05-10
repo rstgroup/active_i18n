@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'active_I18n/version'
+require 'active_i18n/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_I18n"
+  spec.name          = "active_i18n"
   spec.version       = ActiveI18n::VERSION
   spec.authors       = ["TODO: Write your name"]
   spec.email         = ["TODO: Write your email address"]
