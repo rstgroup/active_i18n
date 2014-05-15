@@ -1,6 +1,6 @@
 # Active::I18n
 
-[![KMPIT](http://kmpit.com/badge_kmpit.png)](http://bitly.com/kmpitcom) [![KMPIT](http://kmpit.com/badge_howwedoapps.png)](http://bitly.com/howwedoapps)
+[![KMPIT](http://kmpit.com/badge_kmpit.png)](http://kmpit.com) [![KMPIT](http://kmpit.com/badge_howwedoapps.png)](http://howwedoapps.com)
 
 I18n translation panel for activeadmin. Currently in development.
 
