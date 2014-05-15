@@ -4,32 +4,26 @@
       %option All
 
   .panel
-    %h3
-      %a 
-        %i.fa.fa-folder
-        Messages
-      %span.breadcrumb_sep >>
-      %a 
-        %i.fa.fa-folder
-        Mailer
+    %h3=linkify_scope(params[:scope])
 
     .panel_contents
-      .translation
-        .original
-          .lang
-            %p
-              %i.pl
-              pl - Polski
-          .content-wrapper
-            .content
-              Wiadomość została wysłana
+      - ActiveI18n::I18nModel.translations(params[:scope]).each do |key_value|
         .translation
-          .lang
-            %p
-              %i.en
-              en - English
-            %p
-              %b ONE
-          .content-wrapper
-            .content
-              Wiadomość została wysłana
+          .original
+            .lang
+              %p
+                %i.pl
+                pl - Polski
+            .content-wrapper
+              .content
+                = I18n.t(key_value[0], :scope => params[:scope], :locale => I18n.default_locale)
+          .translated
+            .lang
+              %p
+                %i.en
+                en - English
+              %p
+                %b ONE
+            .content-wrapper
+              .content
+                = I18n.t(key_value[0], :scope => params[:scope], :locale => "en", :default => "brak tlumaczenia")
