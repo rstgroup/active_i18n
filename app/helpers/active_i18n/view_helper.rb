@@ -10,10 +10,12 @@ module ActiveI18n
     end
 
     def li_scope(key, value, scope)
+      return unless ActiveI18n::I18nModel.is_scope?(value)
       capture_haml do
-        haml_tag :li do 
+        haml_tag :li, :class => params[:scope].match(scope) ? "selected" : "unselected" do 
           haml_tag :p do 
-            haml_tag(:i, "", :class => "fa fa-folder")
+            haml_tag(:i, "", :class => "close fa fa-folder")
+            haml_tag(:i, "", :class => "open fa fa-folder-open")
             haml_tag :a, :href => admin_translations_path(scope: scope) do 
               haml_concat key
             end
@@ -40,7 +42,7 @@ module ActiveI18n
           haml_tag :span, ">>", :class => "breadcrumb_sep" if i!=0
           link_scopes.push key
           haml_tag :a, :href => admin_translations_path(scope: link_scopes.join(".")) do 
-            haml_tag :i, :class => "fa fa-folder"
+            haml_tag :i, :class => "fa fa-folder-open"
             haml_concat key.to_s
           end
         end

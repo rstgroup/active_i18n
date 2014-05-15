@@ -12,18 +12,19 @@
           .original
             .lang
               %p
-                %i.pl
-                pl - Polski
+                %i.flag{:class => "flag-#{I18n.default_locale.to_s}"}
+                Polski
             .content-wrapper
               .content
                 = I18n.t(key_value[0], :scope => params[:scope], :locale => I18n.default_locale)
           .translated
             .lang
               %p
-                %i.en
-                en - English
-              %p
-                %b ONE
+                %i.flag.flag-gb
+                English
+              - if false
+                %p
+                  %b ONE
             .content-wrapper
-              .content
+              .content{:class => I18n.t(key_value[0], :scope => params[:scope], :locale => "en", :default => "").present? ? "present" : "blank"}
                 = I18n.t(key_value[0], :scope => params[:scope], :locale => "en", :default => "brak tlumaczenia")

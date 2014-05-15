@@ -36,6 +36,23 @@
       background: image-url("active_i18n/li.png") no-repeat 0 10px
       &:last-child
         padding-bottom: 0
+    li.unselected ul
+      display: none
+    li.selected > p
+      a 
+        color: #2c3e50
+        font-weight: 600
+      & > i
+        &.close
+          display: none
+        &.open
+          display: inline
+          color: #e74c3c
+    li.unselected > p > i
+      &.close
+        display: inline
+      &.open
+        display: none
     a 
       color: #7f8c8d
       text-decoration: none

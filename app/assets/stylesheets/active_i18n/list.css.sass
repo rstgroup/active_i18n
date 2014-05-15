@@ -14,11 +14,13 @@
       text-decoration: none
     i.fa
       margin-right: 5px
+      color: #2c3e50
   .panel_contents
     padding: 0
 
 
 .active-i19n-list .translation
+  border-bottom: #d3d8dc 1px solid
   font-size: 14px
   & > div
     height: 90px
@@ -32,6 +34,7 @@
       border-color: transparent
 
   .lang
+    color: #7f8c8d
     float: left
     width: 130px
     height: 90px
@@ -39,7 +42,13 @@
     p
       padding: 12px 15px
       margin-bottom: 0
+    .flag
+      margin-right: 8px
   .content-wrapper
     margin-left: 130px
     .content
       padding: 12px 15px
+      cursor: pointer
+      &.blank
+        color: #7f8c8d
+        font-style: italic
