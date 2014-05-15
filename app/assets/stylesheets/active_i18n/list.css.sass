@@ -25,6 +25,8 @@
   & > div
     height: 90px
     border-bottom: #d3d8dc 1px solid
+    text-overflow: ellipsis
+    overflow: hidden
     &:last-child
       border: none
   .original
@@ -48,7 +50,8 @@
     margin-left: 130px
     .content
       padding: 12px 15px
-      cursor: pointer
       &.blank
         color: #7f8c8d
         font-style: italic
+  .translated .content-wrapper .content 
+    cursor: pointer
