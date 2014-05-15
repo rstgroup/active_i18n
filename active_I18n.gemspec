@@ -6,8 +6,8 @@ require 'active_i18n/version'
 Gem::Specification.new do |spec|
   spec.name          = "active_i18n"
   spec.version       = ActiveI18n::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["Wojtek Krysiak"]
+  spec.email         = ["wojciech.g.krysiak@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
