@@ -8,7 +8,7 @@ module ActiveI18n
   def self.config(config)
     throw "You have to define store for translations" unless config[:store]
     translations_store = config[:store]
-    base_store = I18n::Backend::Simple.new
+    base_store = I18n.backend
     I18n.backend = I18n::Backend::Chain.new(translations_store, base_store)
     BaseStore.set_backend(base_store)
     BaseStore.set_except_filter(config[:except]) if config[:except]

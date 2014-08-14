@@ -11,14 +11,14 @@ module ActiveI18n
 
       private
         def unflatten_scope(value, scope)
-          strip_first([scope, value].join("."))
+          strip_first(value, scope)
         end
 
-        def strip_first(str)
+        def strip_first(value, str)
           a = str.split(".")
-          return a.first if a.size < 2
+          return value unless a.any?
           hash = Hash.new
-          hash[a.shift] = strip_first(a.join("."))
+          hash[a.shift] = strip_first(value, a.join("."))
           hash
         end
     })

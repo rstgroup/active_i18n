@@ -13,5 +13,11 @@ describe ActiveI18n::TranslationsStore do
       ActiveI18n::TranslationsStore.store_translation(translation, "ala.ma.kota", ActiveI18n.locale)
       expect(I18n.t("ala.ma.kota", :locale => ActiveI18n.locale)).to eq(translation)
     end
+
+    it "saves translation with dots" do
+      translation = "tak ma .kota"
+      ActiveI18n::TranslationsStore.store_translation(translation, "ala.ma.kota", ActiveI18n.locale)
+      expect(I18n.t("ala.ma.kota", :locale => ActiveI18n.locale)).to eq(translation)
+    end
   end
 end

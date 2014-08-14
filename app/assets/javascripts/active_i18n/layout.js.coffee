@@ -20,7 +20,7 @@ $ ->
           type: "POST"
           data: {translation: form.find("textarea").val()}
           success: (ret) ->
-            content.html(ret).show()
+            content.text(ret).show()
             form.hide()
         )
         false
