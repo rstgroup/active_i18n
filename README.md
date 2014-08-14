@@ -98,7 +98,7 @@ and inside active_admin.css.scss also add active_i18n:
 
 ## Contributing
 
-1. Fork it ( http://github.com/KMPgroup/active_skin/fork )
+1. Fork it ( http://github.com/rstgroup/active_i18n/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
