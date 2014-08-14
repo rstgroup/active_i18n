@@ -1,0 +1,76 @@
+en:
+  active_i18n: 
+    labels: 
+      translations: Translations
+      scopes: "Scopes"
+      search:placecholder: Search translation
+      no_translation: No translation
+    languages: 
+      af: Afrikaans
+      sq: Albanian
+      ar: Arabic
+      eu: Basque
+      be: Belarusian
+      bs: Bosnian
+      bg: Bulgarian
+      ca: Catalan
+      hr: Croatian
+      zh_cn:  Chinese
+      zh_tw:  Chinese
+      cs: Czech
+      da: Danish
+      nl: Dutch
+      en: English
+      en:us:  English
+      et: Estonian
+      fa: Farsi
+      fil:  Filipino
+      fi: Finnish
+      fr: French
+      ga: Gaelic
+      gl: Gallego
+      ka: Georgian
+      de: German
+      de:du:  German
+      el: Greek
+      gu: Gujarati
+      he: Hebrew
+      hi: Hindi
+      hu: Hungarian
+      is: Icelandic
+      id: Indonesian
+      it: Italian
+      ja: Japanese
+      kn: Kannada
+      km: Khmer
+      ko: Korean
+      lo: Lao
+      lt: Lithuanian
+      lv: Latvian
+      ml: Malayalam
+      ms: Malaysian
+      mi:tn:  Maori
+      mi:wwow:  Maori
+      mn: Mongolian
+      no: Norwegian
+      no:gr:  Norwegian
+      nn: Nynorsk
+      pl: Polish
+      pt: Portuguese
+      pt:br:  Portuguese
+      ro: Romanian
+      ru: Russian
+      sm: Samoan
+      sr: Serbian
+      sk: Slovak
+      sl: Slovenian
+      so: Somali
+      es: Spanish
+      sv: Swedish
+      tl: Tagalog
+      ta: Tamil
+      th: Thai
+      to: Tongan
+      tr: Turkish
+      uk: Ukrainian
+      vi: Vietnamese

@@ -1,0 +1,60 @@
+.admin_translations #sidebar
+  .sidebar_section
+    background: transparent
+  .panel_contents
+    margin: 0
+    padding: 0
+  form.filter_form
+    padding: 15px
+    border-bottom: 1px solid #d3d8dc
+    input
+      padding: 8px
+  .scopes-list
+    padding: 15px
+    color: #7f8c8d
+    font-size: 13px
+    p
+      padding: 0 0 4px 0
+      margin: 0
+    i.fa
+      margin-right: 8px
+      color: #2c3e50
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+    ul ul
+      border-left: #d3d8dc 1px solid
+      margin-left: 5px
+    li
+      list-style: none
+      padding: 0
+      margin: 0
+      padding: 2px 0 2px 10px
+      
+    li li
+      background: image-url("active_i18n/li.png") no-repeat 0 10px
+      &:last-child
+        padding-bottom: 0
+    li.unselected ul
+      display: none
+    li.selected > p
+      a 
+        color: #2c3e50
+        font-weight: 600
+      & > i
+        &.close
+          display: none
+        &.open
+          display: inline
+          color: #e74c3c
+    li.unselected > p > i
+      &.close
+        display: inline
+      &.open
+        display: none
+    a 
+      color: #7f8c8d
+      text-decoration: none
+      &:hover
+        text-decoration: underline

@@ -1,0 +1,7 @@
+en:
+  nested_test: 
+    nested1: a
+    nested2: b
+  test:
+    first_key: First key
+    second_key: Second key

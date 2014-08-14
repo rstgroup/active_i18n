@@ -1,0 +1,36 @@
+.active-i19n-list
+  .lang= available_locales
+
+  .panel
+    %h3=linkify_scope(params[:scope])
+
+    .panel_contents
+      - ActiveI18n::BaseStore.translations(params[:scope]).each do |key_value|
+        .translation
+          .original
+            .lang
+              %p
+                %i.flag{:class => "flag-#{I18n.default_locale.to_s}"}
+                = t(I18n.default_locale, :scope => "active_i18n.languages")
+            .content-wrapper
+              .content
+                = I18n.t(key_value[0], :scope => params[:scope], :locale => I18n.default_locale)
+          .translated
+            .lang
+              %p
+                %i.flag{class: "flag-#{ActiveI18n.locale}"}
+                = t(ActiveI18n.locale, :scope => "active_i18n.languages")
+              - if false
+                %p
+                  %b ONE
+            .content-wrapper
+              .content{:class => I18n.t(key_value[0], :scope => params[:scope], :locale => ActiveI18n.locale, :default => "").present? ? "present" : "blank"}
+                = I18n.t(key_value[0], :scope => params[:scope], :locale => ActiveI18n.locale, :default => t(:no_translation, :scope => "active_i18n.labels"))
+              = semantic_form_for "translation", url: url_for(scope: params[:scope], key: key_value[0], :action => "translate") do |f|
+                = f.inputs do 
+                  = f.input :content, :as => :text, :label => false, :input_html => {:value =>  I18n.t(key_value[0], :scope => params[:scope], :locale => ActiveI18n.locale, :default => "")}
+                = f.actions do
+                  = f.action :submit, :as => :input
+                  = f.action :cancel, :as => :link, :wrapper_html => {:class => "cancel"}
+                
+              
