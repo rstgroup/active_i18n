@@ -84,3 +84,10 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+
+
+# Ignore generated gems
+*.gem
+
+# Ignore all kind of logs
+*.log
