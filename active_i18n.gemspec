@@ -7,11 +7,11 @@ require "active_i18n/version"
 Gem::Specification.new do |s|
   s.name        = "active_i18n"
   s.version     = ActiveI18n::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveI18n."
-  s.description = "TODO: Description of ActiveI18n."
+  s.authors     = ["Wojciech Krysiak"]
+  s.email       = ["w@rst-it.com"]
+  s.homepage    = "https://github.com/rstgroup/active_i18n"
+  s.summary     = "Plugin for active admin which allows to easy modify I18n translations"
+  s.description = "Plugin for active admin which allows to easy modify I18n translations"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
