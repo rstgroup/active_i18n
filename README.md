@@ -2,6 +2,8 @@
 
 ActiveI18n is an translation panel designed to work inside an activeadmin.
 
+[![Gem Version](https://badge.fury.io/rb/active_i18n.svg)](http://badge.fury.io/rb/active_i18n) [![Code Climate](https://codeclimate.com/github/rstgroup/active_i18n/badges/gpa.svg)](https://codeclimate.com/github/rstgroup/active_i18n) [![RST](http://rst-it.com/files/rstwithpassion.png)](http://rst-it.com) [![RST](http://rst-it.com/files/howwedoapps.png)](http://howwedoapps.com)
+
 how it looks:
 
 <a href="./screen.png"><img src="./screen.png"></a>

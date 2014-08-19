@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Plugin for active admin which allows to easy modify I18n translations"
   s.description = "Plugin for active admin which allows to easy modify I18n translations"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 3.2.13"
