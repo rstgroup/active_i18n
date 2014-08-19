@@ -3,4 +3,8 @@ rvm:
   - "2.1.1"
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec`
+script: 
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec/
 cache: bundler
