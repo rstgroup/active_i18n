@@ -21,4 +21,5 @@ gem "activeadmin"
 gem "sass-rails"
 gem "haml-rails"
 gem "redis"
+gem "rake"
 gem 'pry-rails', git: 'https://github.com/rweng/pry-rails.git'

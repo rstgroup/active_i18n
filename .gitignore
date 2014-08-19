@@ -91,3 +91,4 @@ pickle-email-*.html
 
 # Ignore all kind of logs
 *.log
+*.rdb
