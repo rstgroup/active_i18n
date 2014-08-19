@@ -1,6 +1,10 @@
 require "spec_helper"
 
 describe ActiveI18n::BaseStore do
+  before (:each) do 
+    ActiveI18n::BaseStore.set_except_filter(nil)
+  end
+
   describe "translations_hash" do 
     it "returns all translations for default locale" do
       I18n.locale = :pl
